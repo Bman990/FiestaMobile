@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.cartContainer {
+    background-color: rgb(231, 168, 50);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cartContent {
+    width: 80%;
+    height: 80%;
+    background-color: rgb(255, 68, 68);
+    display: flex;
+  }
+  
+  .cartSection {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* overflow-y: auto; Add this to enable vertical scrolling */
+  }
+  
+  .cartHeaderText {
+    font-family: 'Bangers', cursive;
+    display: flex;
+    justify-content: center;
+    color:rgb(255, 193, 202);
+  }
+
+  .emptyText {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  li {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none; /* Remove default list styling */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .cartImageDiv {
+    width: 30%;
+  }
+  
+  .cartImageStyle {
+    width: 100%;
+    border-radius: 30px;
+  }
+
+  .cartItemDetails {
+    margin-left: 1em;
+  }
+
+  .cartItemName {
+    font-size: 1.5em;
+    font-family: 'Bangers', cursive;
+  }
+  
+  .cartItemQuantity {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .totalSection {
+    background-color: rgb(255, 193, 202);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 68, 68);
+  }
+
+  .cartItemsList {
+    overflow-y: auto; /* Add this to enable vertical scrolling */
+    &::-webkit-scrollbar {
+        width: 0px /* Set the width of the scrollbar */
+      }
+    
+    }
+
+    .totalContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .totalText {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+
+    .payBtn {
+        border: none;
+        padding: 0.6em 0.9em 0.6em 0.9em;
+        color: rgb(255, 68, 68);
+        background-color: rgb(231, 168, 50);
+        border-radius: 10px;
+        font-size: 1.3em;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .payBtn:hover{
+        background-color:rgb(255, 68, 68);
+        color: rgb(231, 168, 50); 
+        cursor: pointer;
+    }
+
+    /* Media queries for smaller screens */
+@media screen and (max-width: 768px) {
+  .cartContainer {
+    
+  }
+
+  .cartSection {
+      width: 100%; /* Adjust as needed for smaller screens */
+  }
+
+  .cartImageDiv {
+      width: 100%; /* Adjust as needed for smaller screens */
+  }
+
+  .cartItemName {
+    font-size: 1.1em;
+    text-align: center;
+  }
+  
+  .cartItemQuantity {
+    text-align: center;
+  }
+
+  .totalSection {
+      width: 100%; /* Adjust as needed for smaller screens */
+  }
+
+  .totalText{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cartContent {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .cartSection {
+    height: 50%; /* Adjust as needed for smaller screens */
+}
+
+
+.cartImageStyle {
+  width: 50%;
+  margin: 0;
+  border-radius: 30px;
+}
+
+.cartDetails {
+  margin: 0;
+}
+
+
+.totalSection {
+  height: 50%; /* Adjust as needed for smaller screens */
+}
+
+}

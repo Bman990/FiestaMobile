@@ -1,0 +1,60 @@
+
+
+{
+    "items": [
+      {
+        "image": "/tacoItem1.jpg",
+        "name": "Loaded Taco",
+        "price": "$5.99",
+        "desc": "The Popular flavour packed Loaded Taco"
+      },
+      {
+        "image": "/tacoItem2.jpg",
+        "name": "Flame Grilled Steak Taco",
+        "price": "$6.99",
+        "desc": "Grilled to perfection, served on a Taco"
+      },
+      {
+        "image": "/tacoItem3.jpg",
+        "name": "Brisket Fiesta Taco",
+        "price": "$6.99",
+        "desc": "Brisket full of juicy flavor, served by the best"
+      },
+      {
+        "image": "/tacoItem4.jpg",
+        "name": "Rojo Fiesta Taco",
+        "price": "$5.99",
+        "desc": "Red and a fiesta of flavors"
+      },
+      {
+        "image": "/tacoItem5.jpg",
+        "name": "Grilled Chicken Taco",
+        "price": "$4.99",
+        "desc": "Grilled and served with our special sauce"
+      },
+      {
+        "image": "/tacoItem6.jpg",
+        "name": "Naranja Fused Fiesta Taco",
+        "price": "$7.99",
+        "desc": "Vibrant flavour like the color of the taco"
+      },
+      {
+        "image": "/tacoItem7.jpg",
+        "name": "Fiesta Saludable Taco",
+        "price": "$5.99",
+        "desc": "Healthy and flavor packed, served to you"
+      },
+      {
+        "image": "/tacoItem8.jpg",
+        "name": "Crispy Fiesta Chicken Taco",
+        "price": "$9.99",
+        "desc": "Crispy, juicy, and a fiesta all in one taco"
+      },
+      {
+        "image": "/tacoItem9.jpg",
+        "name": "Chunky Crispy Chicken Taco",
+        "price": "$10.99",
+        "desc": "Chunky, juicy, and crispy with a fiesta of flavor"
+      }
+    ]
+  }

@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+
+.storyContainer{
+    width: 100vw;
+    height: max-content;
+    background-color: rgb(231, 168, 50);
+}
+
+.storyContent {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.storyHead {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.storyHead > img {
+    width: 80%;
+    margin-top: 5em;
+}
+
+
+.storyInfo {
+    width: 60%;
+    height: 100%;
+    margin-left: 4em;
+}
+
+.storyInfo > h1 {
+    margin-top: 3em;
+    margin-bottom: 2em;
+    font-size: 3em;
+    color: rgb(255, 68, 68);
+    font-family: 'Bangers', cursive;
+}
+
+.storyInfo > p {
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.span1 {
+    color: rgb(255, 193, 202);
+    font-size: 1.3em;
+    font-family: 'Bangers', cursive;
+}
+
+.span2 {
+    color: rgb(179, 255, 66);
+    font-size: 1.3em;
+    font-family: 'Bangers', cursive;
+}
+
+.span3 {
+    color: rgb(255, 255, 80);
+    font-size: 1.3em;
+    font-family: 'Bangers', cursive;
+}
+
+.span4 {
+    color: rgb(255, 68, 68);
+    font-size: 1.3em;
+    font-family: 'Bangers', cursive;
+}
+
+/* Media query for screens between 768px and the default styles */
+@media screen and (min-width: 769px) and (max-width: 1285px) {
+    .storyContainer {
+        height: max-content;
+    }
+
+    .storyContent {
+        flex-direction: column;
+        height: max-content;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .storyHead > img {
+        width: 100%;
+        margin-top: 2em;
+        height: max-content;
+    }
+
+    .storyInfo {
+        height: max-content;
+    }
+
+    .storyInfo > p {
+        height: max-content;
+        margin: 0;
+    }
+
+    .span1,
+    .span2,
+    .span3,
+    .span4 {
+        font-size: 1.6em;
+    }
+}
+
+/* Media queries for smaller screens - Story Section */
+@media screen and (max-width: 768px) {
+    .storyContainer {
+        height: max-content;
+    }
+
+    .storyContent {
+        flex-direction: column;
+        height: max-content;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .storyHead > img {
+        width: 100%;
+        margin-top: 2em;
+        height: max-content;
+    }
+
+    .storyInfo {
+        height: max-content;
+    }
+
+    .storyInfo > p {
+        height: max-content;
+        margin: 0;
+    }
+
+    .span1,
+    .span2,
+    .span3,
+    .span4 {
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .storyContainer {
+        height: max-content;
+    }
+
+    .storyHead > img {
+        margin-top: 1em;
+        height: max-content;
+    }
+
+    .storyInfo {
+        height: max-content;
+        overflow: auto;
+    }
+
+    .storyInfo > h1 {
+        font-size: 2em;
+        margin: 0;
+    }
+
+    .storyInfo > p {
+        font-size: 1em;
+        height: max-content;
+        margin: 0;
+    }
+
+    .span1,
+    .span2,
+    .span3,
+    .span4 {
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+
+
+.navStyle {
+    position: fixed;
+    width: 100vw;
+    height: max-content;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0) rotate(0deg); backface-visibility: hidden; }
+    25% { transform: translateX(-5px) rotate(-5deg); backface-visibility: hidden; }
+    50% { transform: translateX(5px) rotate(5deg); backface-visibility: hidden; }
+    75% { transform: translateX(-5px) rotate(-5deg); backface-visibility: hidden; }
+    100% { transform: translateX(5px) rotate(5deg); backface-visibility: hidden; }
+  }
+
+  .navStyle > img {
+    margin-left: 1em;
+    transform-origin: center bottom; /* Adjust as needed */
+}
+.navStyle > img:hover{
+    cursor: pointer;
+    animation: shake 0.5s ease;
+}
+
+.navUL {
+    display: flex;
+    width: 18%;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.navUL > li:last-child{
+    margin-right: 3em;
+}
+
+.navUL > li > button {
+    font-size: 1.1em;
+    font-family: 'Bangers', cursive;
+    color: rgb(255, 68, 68);
+    transition: padding 0.2s, color 0.2s;
+    border: none;
+    background-color: transparent;
+}
+
+
+.navUL > li > button:hover{
+    color: rgb(179, 255, 66);
+    background-color: rgb(255, 68, 68);
+    padding: 0.5em 0.8em 0.5em 0.8em;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.svgBtn {
+    position: relative;    
+    background-color: transparent;
+    padding: 0.3em 0.5em 0.3em 0.5em;
+    border: none;
+}
+
+
+
+.svgBtn:hover .bagSvg {
+    fill: rgb(179, 255, 66);
+}
+
+.bagSvg {
+    width: 25px;
+    height: 25px;
+    fill: rgb(255, 68, 68);
+}
+
+.bagSvg:hover {
+    fill: rgb(179, 255, 66);
+}
+
+.quanityNum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(179, 255, 66);
+    color: rgb(255, 68, 68);
+    position: absolute;
+    width: 1em;
+    border-radius: 50px;
+    right: 0;
+    bottom: 0;
+}
+
+/* Media query for screens between 769px and 1123px */
+@media screen and (min-width: 769px) and (max-width: 1123px) {
+    /* Add your styles for this range */
+    .navUL {
+        width: max-content;
+    }
+
+    .navUL > li {
+        display: none; /* Hide all navigation buttons except bagSvg */
+    }
+
+    .navUL > li:last-child {
+        display: flex; /* Hide all navigation buttons except bagSvg */
+        margin: 0.8em;
+    }
+}
+
+/* Media query for screens up to 768px */
+@media screen and (max-width: 768px) {
+    .navUL {
+        width: max-content;
+    }
+
+    .navUL > li {
+        display: none; /* Hide all navigation buttons except bagSvg */
+    }
+
+    .navUL > li:last-child {
+        display: flex; /* Hide all navigation buttons except bagSvg */
+        margin: 0.8em;
+    }
+
+    .navStyle > img {
+        width: 60px; /* Adjust the size of the image as needed */
+        height: 60px;
+    }
+}
+
+/* Media query for screens up to 480px */
+@media screen and (max-width: 480px) {
+    .navStyle > img {
+        width: 40px; /* Adjust the size of the image for smaller screens */
+        height: 40px;
+    }
+
+    .bagSvg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .quanityNum {
+        width: 0.8em;
+    }
+}

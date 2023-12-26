@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+.menu-item-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.imageItemStyle {
+    border-radius: 50px;
+    overflow: hidden;
+    width: 80%;
+    height: 100%;
+}
+
+
+.item-name {
+    font-family: 'Bangers', cursive;
+    font-size: 1.8em;
+    color: rgb(255, 68, 68);
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+}
+
+.item-price {
+    font-family: 'Bangers', cursive;
+    font-size: 1.3em;
+    color: rgb(255, 208, 214);
+    margin-top: 0em;
+    margin-bottom: 0.3em;
+}
+
+.item-desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    color: rgb(179, 255, 66);
+    margin-top: 0em;
+    margin-bottom: 0.3em;
+}
+
+.buttonDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.6em;
+    margin-bottom: 1.2em;
+}
+
+.orderBtn {
+    padding: 0.5em 0.7em 0.5em 0.7em;
+    border: none;
+    background-color: transparent;
+    font-size: 1.1em;
+    background-color: rgb(255, 208, 214);
+    color:rgb(255, 68, 68);
+    border-radius: 50px;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.orderBtn:hover{
+    cursor: pointer;
+    background-color: rgb(255, 68, 68);
+    color: rgb(255, 208, 214);
+}
+
+.addedBtns{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.quanityChangeDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.changeBtn {
+    border: none;
+    background-color:rgb(255, 68, 68);
+    color: rgb(179, 255, 66);
+    font-size: 1.4em;
+    padding: 0.3em 0.5em 0.3em 0.5em;
+}
+
+.changeBtn:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.quantityDisplay {
+   color: rgb(179, 255, 66);
+   font-size: 1.4em;
+   margin-left: 0.5em;
+   margin-right: 0.5em;
+}
+
+.removeBtnDiv {
+    margin-top: 1em;
+}
+
+.removeBtn {
+    padding: 0.5em 0.7em 0.5em 0.7em;
+    border: none;
+    background-color: rgb(179, 255, 66);
+    color: rgb(255, 68, 68);
+}
+
+.removeBtn:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.quantityChangeDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
