@@ -20,7 +20,7 @@ function App() {
       <ShoppingCartProvider>
         <Navbar scrollToSection={scrollToSection} />
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path='/FiestaMobile' element={<Home />} />
           <Route path='/cart' element={<CartPage />} />
         </Routes>
         <Footer />
