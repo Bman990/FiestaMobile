@@ -17,7 +17,7 @@ function App() {
   
   return (
     <>
-    <Router basename='basename="/FiestaMobile"'>
+    <Router basename="/FiestaMobile">
       <ShoppingCartProvider>
         <Navbar scrollToSection={scrollToSection} />
         <Routes>
