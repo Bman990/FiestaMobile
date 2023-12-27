@@ -45,7 +45,7 @@ export default function MenuCard({ name, price, image, desc }) {
 
   return (
     <div className="menu-item-card">
-      <img src={image} alt={name} width={510} height={500} className='imageItemStyle' />
+      <img src={{`${process.env.PUBLIC_URL}/dist/${item.image}`} alt={name} width={510} height={500} className='imageItemStyle' />
       <div className="details">
         <h3 className="item-name">{name}</h3>
         <p className="item-price">{price}</p>
