@@ -137,10 +137,6 @@
 
 /* Media query for screens up to 480px */
 @media screen and (max-width: 480px) {
-    .navStyle > img {
-        width: 40px; /* Adjust the size of the image for smaller screens */
-        height: 40px;
-    }
 
     .bagSvg {
         width: 20px;
