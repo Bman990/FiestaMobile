@@ -23,9 +23,15 @@ export default function Navbar() {
 
   return (
     <nav className='navStyle'>
-      <Link to="/" onClick={() => handleSectionClick('heroSection')}>
-        <img src={tacoLogo} width='110' height='110' alt="Taco Logo" />
-      </Link>
+      {isCartPage ? (
+        <Link className="backHomeLink" to="/" onClick={() => handleSectionClick('heroSection')}>
+          <span className='backHomeText'>Back Home</span>
+        </Link>
+      ) : (
+        <Link to="/" onClick={() => handleSectionClick('heroSection')}>
+          <img src={tacoLogo} width={110} height={100} />
+        </Link>
+      )}
 
       {!isCartPage && (
         <ul className='navUL'>
